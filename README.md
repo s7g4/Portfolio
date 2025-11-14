@@ -1,73 +1,84 @@
-# Welcome to your Lovable project
+# Portfolio Website
 
-## Project info
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. Showcasing projects, skills, and contact information for Shaurya Gaur, a Software Developer & AI Engineer.
 
-**URL**: https://lovable.dev/projects/dc09ee26-158d-4027-a756-1bc6fe047021
+## Technologies Used
 
-## How can I edit this code?
+- **Frontend**: React 18, TypeScript, Vite
+- **Styling**: Tailwind CSS, shadcn/ui
+- **Routing**: React Router
+- **Email Service**: EmailJS
+- **Icons**: Lucide React
+- **State Management**: React Hooks
+- **Notifications**: Sonner (toast notifications)
 
-There are several ways of editing your application.
+## Getting Started
 
-**Use Lovable**
+### Prerequisites
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/dc09ee26-158d-4027-a756-1bc6fe047021) and start prompting.
+- Node.js (v18 or higher)
+- npm or yarn
 
-Changes made via Lovable will be committed automatically to this repo.
+### Installation
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+1. Clone the repository:
+```bash
 git clone <YOUR_GIT_URL>
+cd portfolio
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. Install dependencies:
+```bash
+npm install
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open [http://localhost:####](http://localhost:####) in your browser.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### EmailJS Setup (for Contact Form)
 
-**Use GitHub Codespaces**
+1. Sign up for a free account at [EmailJS](https://www.emailjs.com/)
+2. Create an email service (e.g., Gmail)
+3. Create an email template with variables: `{{name}}`, `{{email}}`, `{{message}}`
+4. Update `src/components/Contact.tsx` with your credentials:
+   - Replace `'YOUR_PUBLIC_KEY'` with your public key
+   - Replace `'YOUR_SERVICE_ID'` with your service ID
+   - Replace `'YOUR_TEMPLATE_ID'` with your template ID
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/
+│   ├── ui/           # shadcn/ui components
+│   ├── About.tsx     # About section
+│   ├── Contact.tsx   # Contact form and social links
+│   ├── Hero.tsx      # Hero section with intro
+│   ├── Navigation.tsx # Navigation bar
+│   ├── Projects.tsx  # Projects showcase
+│   ├── Skills.tsx    # Skills section
+│   └── ComingSoon.tsx # Coming soon page for demos
+├── pages/
+│   ├── Index.tsx     # Main page
+│   └── NotFound.tsx  # 404 page
+├── hooks/            # Custom hooks
+├── lib/              # Utilities
+└── assets/           # Static assets
+```
 
-This project is built with:
+## Available Scripts
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-## How can I deploy this project?
+## Contact
 
-Simply open [Lovable](https://lovable.dev/projects/dc09ee26-158d-4027-a756-1bc6fe047021) and click on Share -> Publish.
+Shaurya Gaur - [shauryagaur07@gmail.com](mailto:shauryagaur07@gmail.com)
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Project Link: [https://github.com/s7g4/portfolio-2](https://github.com/s7g4/portfolio-2)
