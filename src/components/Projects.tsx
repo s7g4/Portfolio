@@ -38,8 +38,8 @@ const Projects = () => {
         "A fully interactive command-line portfolio showcasing my work, skills, and personality — built for developers who appreciate terminals.",
       tech: ["Node.js", "Inquirer", "JavaScript", "CLI Tools"],
       gradient: "from-green-500 to-teal-600",
-      github: "https://github.com/s7g4/Portfolio",
-      demo: "https://s7g4.github.io/Portfolio/"
+      github: "https://github.com/s7g4/Portfolio2",
+      demo: "https://s7g4.github.io/Portfolio2/"
     }
   ];
 
