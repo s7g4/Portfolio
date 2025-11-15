@@ -49,7 +49,7 @@ const About = () => {
 
         <p className="text-center text-muted-foreground text-lg max-w-3xl mx-auto animate-fade-in-up">
           Think your terminal skills are sharp? Try my CLI portfolio. Worst case—you'll learn something. Best case—you'll impress yourself.
-          <a href="https://s7g4.github.io/Portfolio/" target="_blank" className="text-primary font-medium hover:underline">
+          <a href="https://s7g4.github.io/Portfolio2/" target="_blank" className="text-primary font-medium hover:underline">
             Check it out here.
           </a>
         </p>
