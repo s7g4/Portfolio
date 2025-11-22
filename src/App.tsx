@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import ComingSoon from "./components/ComingSoon";
+import CustomCursor from "./components/ui/CustomCursor";
+import AnimatedBackground from "./components/ui/AnimatedBackground";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +23,8 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <CustomCursor />
+        <AnimatedBackground />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

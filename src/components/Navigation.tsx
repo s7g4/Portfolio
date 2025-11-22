@@ -25,11 +25,10 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled
-          ? "bg-background/80 backdrop-blur-lg shadow-lg border-b border-border"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
+        ? "bg-background/80 backdrop-blur-lg shadow-lg border-b border-border"
+        : "bg-transparent"
+        }`}
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <button
@@ -38,14 +37,14 @@ const Navigation = () => {
         >
           Portfolio
         </button>
-        
+
         <div className="hidden md:flex gap-6">
           {navItems.map((item) => (
             <Button
               key={item.id}
               variant="ghost"
               onClick={() => scrollToSection(item.id)}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-foreground transition-colors hover:text-primary hover:bg-transparent"
             >
               {item.label}
             </Button>

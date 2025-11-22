@@ -41,11 +41,11 @@ All colors MUST be HSL.
     /* Custom design tokens */
     --gradient-primary: linear-gradient(135deg, hsl(189 94% 55%), hsl(220 90% 60%));
     --gradient-dark: linear-gradient(180deg, hsl(220 26% 8%), hsl(220 26% 4%));
-    --gradient-overlay: linear-gradient(180deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
-    
+    --gradient-overlay: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+
     --glow-primary: 0 0 40px hsla(189, 94%, 55%, 0.3);
     --shadow-elevated: 0 20px 60px -10px rgba(0, 0, 0, 0.5);
-    
+
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
@@ -55,13 +55,37 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html,
+  body,
+  a,
+  button,
+  input,
+  select,
+  textarea,
+  [role="button"] {
+    @apply cursor-none;
+    cursor: none !important;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased overflow-x-hidden;
   }
 }
 
 @keyframes float {
-  0%   { transform: translateY(0px); }
-  50%  { transform: translateY(-12px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
 }
